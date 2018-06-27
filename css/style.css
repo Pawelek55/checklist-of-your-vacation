@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    background-color: darkturquoise;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 7px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 10px 10px  rgba(0, 0, 0, 0.5)
+}
+
+.stripe{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border-bottom: 1px solid #D1E2FF;
+}
+
+.stripe:last-child{
+    border-bottom: none;
+}
+
+input{
+    margin: 20px;
+}
+
+input:checked + p {
+    background-color: goldenrod;
+    text-decoration: line-through;
+}
+
+p{
+    flex: 1;
+    border-left: 1px solid #D1E2FF;
+    margin: 0;
+    font-size: 20px;
+    padding: 22px;
+}
